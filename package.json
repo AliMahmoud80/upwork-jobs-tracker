@@ -1,0 +1,20 @@
+{
+  "name": "jobs_tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "moment": "^2.29.1",
+    "node-json-db": "^1.4.1",
+    "node-notifier": "^10.0.0",
+    "set-interval-async": "^2.0.3"
+  }
+}
