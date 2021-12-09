@@ -11,7 +11,7 @@ const scriptStartDate = new Date().getTime();
 
 const fetchInterval = process.env.FETCH_INTERVAL || 180;
 const accessToken = process.env.MASTER_ACCESS_TOKEN;
-const enableLogging = process.env.ENABLE_LOGGINING || false;
+const enableLogging = process.env.ENABLE_LOGGING || false;
 const blockedKeywords = process.env.BLOCKED_KEYWORDS.split(",");
 
 let allJobs = [];
