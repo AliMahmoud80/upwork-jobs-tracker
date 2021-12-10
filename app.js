@@ -16,13 +16,13 @@ const blockedKeywords = process.env.BLOCKED_KEYWORDS.split(",");
 
 let allJobs = [];
 
-const jobsLogTemplate = (title, url, time, budget) => {
+const jobsLogTemplate = (title, url, time, budget, amount) => {
   return `
     ======================
     ${title}
     ${url}
     ${moment(time).fromNow()}
-    Budget: ${budget}
+    Budget: ${budget || amount}
     ======================`;
 };
 
@@ -109,7 +109,8 @@ function logJobs(jobs) {
           job.title,
           `https://www.upwork.com/jobs/${job.ciphertext}`,
           job.createdOn,
-          job.hourlyBudgetText
+          job.hourlyBudgetText,
+          job.amount.amount + "$"
         )
       )
     );
