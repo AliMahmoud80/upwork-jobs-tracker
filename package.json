@@ -1,0 +1,20 @@
+{
+  "name": "upwork-jobs-tracker-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "date-fns": "^2.28.0",
+    "dotenv": "^16.0.0",
+    "node-fetch": "^3.2.2"
+  },
+  "devDependencies": {}
+}
