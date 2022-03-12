@@ -122,7 +122,7 @@ function logJobs(jobs) {
       "\n\x1b========================================================\x1b[0m\n"
     );
 
-    jobs.forEach((job) => {
+    jobs.reverse().forEach((job) => {
       console.log(jobsLogTemplate(job));
     });
 
