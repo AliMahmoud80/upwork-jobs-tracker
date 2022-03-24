@@ -2,6 +2,7 @@ import "dotenv/config";
 import fetch from "node-fetch";
 import dateFns from "date-fns";
 import alert from "alert";
+import beeper from "beeper";
 
 const TOKEN = process.env.MASTER_ACCESS_TOKEN;
 const FETCH_INTERVAL = process.env.FETCH_INTERVAL * 1000;
@@ -142,6 +143,7 @@ function logJobs(jobs) {
 
 function alertNewJobs(length) {
   alert("New " + length + " jobs found");
+  beeper(1);
 }
 
 async function main() {
